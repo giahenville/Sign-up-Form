@@ -571,6 +571,18 @@ video {
   height: 1.5rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -579,12 +591,20 @@ video {
   width: 1.5rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-none {
@@ -649,8 +669,36 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\'\/img\/sign-up-background\.jpg\'\] {
+  background-color: '/img/sign-up-background.jpg';
+}
+
 .bg-\[url\(\/img\/grid\.svg\)\] {
   background-image: url(/img/grid.svg);
+}
+
+.bg-\[url\(\"\"\)\] {
+  background-image: url("");
+}
+
+.bg-\[url\(\"\/img\/\"\)\] {
+  background-image: url("/img/");
+}
+
+.bg-\[url\(\"\/img\/sign-up-background\.jpg\"\)\] {
+  background-image: url("/img/sign-up-background.jpg");
+}
+
+.bg-\[url\(\'\/img\/sign-up-background\.jpg\'\)\] {
+  background-image: url('/img/sign-up-background.jpg');
+}
+
+.bg-\[url\(\'\.\/bg-\\\[\\\'\\\/img\\\/sign-up-background\\\.jpg\\\'\\\]\'\)\] {
+  background-image: url('./bg-\[\'\/img\/sign-up-background\.jpg\'\]');
+}
+
+.bg-\[url\(\'\.\/img\/sign-up-background\.jpg\'\)\] {
+  background-image: url('./img/sign-up-background.jpg');
 }
 
 .bg-center {
