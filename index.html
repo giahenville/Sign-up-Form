@@ -8,73 +8,58 @@
 </head>
 
 <body class="font-serif">
-    <div style = "background-color: #E4E3D3" class= "flex w-screen h-screen">
-        <div class="flex w-screen h-screen transform translate-y-full duration-1000 ease-in-out slideUp-animation" >
-            
-            <div id="left-side" class = "flex flex-col w-2/5">
-                <div id="logo" class="flex items-center">
-                    <img src="./img/odin-icon.svg" alt="The Odin Project icon." 
-                    style="width: 50px; margin: 20px 20px;">
-                    <div class="text-4xl" style="color: #2E2D4D">ODIN</div>
-                </div>
-                <img src="./img/Login-img.svg" alt="A sign-up image." style = "width: 100%;">
-                <div>Sign up today and get exciting offers!</div>
+    <div style="background-color: #E4E3D3" class="flex flex-col md:flex-row w-screen h-screen slideUp-animation">
+        <!-- Left-side -->
+        <div class="bg-white w-screen h-screen md:w-2/5 md:translate-y-0" style="color: #2E2D4D">
+            <div id="logo" class="flex items-center">
+                <img src="./img/odin-icon.svg" alt="The Odin Project icon." style="width: 50px; margin: 20px 20px;">
+                <div class="text-4xl">ODIN</div>
             </div>
+            <img src="./img/Login-img.svg" alt="A sign-up image." style="width: 100%;">
+            <div class="flex justify-center">Sign up today and get exciting offers!</div>
+        </div>
 
-            
-            <div id="right-side" style = "background-color: #6D9F71;" 
-            class="flex justify-center items-center w-3/5 ml-auto h-vh">
-                <div class="slideRight-animation container justify-center items-center ml-10 h-2/3">
-                    <div class="text-5xl" style="color: #2E2D4D">Get Started</div>
-                    <form action="" method="" class="text-xl flex flex-col">
-
-                        <div class="flex">
-                            <div class="flex flex-col mr-20">
-                                <label for="first_name">First Name:</label>
-                                <input type="text" id="first_name" placeholder="John" name="first_name">
-                            </div>
-                          
-                            <div  class="flex flex-col">
-                                <label for="last_name">Last Name:</label>
-                                <input type="text" id="last_name" placeholder="Smith" name="first_name">
-                            </div>
+        <!-- Right-side -->
+        <div style="background-color: #6D9F71;" class="bg-green-500 flex justify-center items-center w-screen md:w-3/5 md:ml-auto">
+            <div class="container justify-center items-center ml-10 h-2/3 slideRight-animation">
+                <div class="text-5xl" style="color: #2E2D4D">Get Started</div>
+                <form action="" method="" class="text-xl flex flex-col" style="color:#2E2D4D">
+                    <div class="flex mt-10">
+                        <div class="flex flex-col mr-20">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" placeholder="John" name="first_name">
                         </div>
-    
-                        <div class="flex">
-                            <div class="flex flex-col mr-20">
-                                <label for="email">Email Address:</label>
-                                <input type="text" id="email" placeholder="you@example.com" name="email">
-                            </div>
-                           
-                            <div class="flex flex-col">
-                                <label for="phone_number">Phone Number:</label>
-                                <input type="number" id="phone_number" placeholder="xxx-xxx-xxxx" name="phone_number">
-                            </div>
-                    
+                        <div class="flex flex-col">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" placeholder="Smith" name="first_name">
                         </div>
-    
-                        <div class="flex">
-                            <div class="flex flex-col mr-20">
-                                <label for="password">Password:</label>
-                                <input type="text" id="password" name="password">
-                            </div>
-                
-                            <div class="flex flex-col">
-                                <label for="password_confirm">Confirm Password:</label>
-                                <input type="text" id="password_confirm" name="password_confirm">
-                            </div>
+                    </div>
+                    <div class="flex mt-10">
+                        <div class="flex flex-col mr-20">
+                            <label for="email">Email Address:</label>
+                            <input type="text" id="email" placeholder="you@example.com" name="email">
                         </div>
-                        <div>
-                            <button type="submit" style="background-color: #E4E3D3;">Create Account</button>
-                            <div>Already have an account? <a href="" style="color:#2E2D4D"> LOGIN </a></div>
+                        <div class="flex flex-col">
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="number" id="phone_number" placeholder="xxx-xxx-xxxx" name="phone_number">
                         </div>
-                       
-                    </form>
-                </div>
-             
+                    </div>
+                    <div class="flex mt-10">
+                        <div class="flex flex-col mr-20">
+                            <label for="password">Password:</label>
+                            <input type="text" id="password" name="password">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="password_confirm">Confirm Password:</label>
+                            <input type="text" id="password_confirm" name="password_confirm">
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button type="submit" style="background-color: #E4E3D3;">Create Account</button>
+                        <div>Already have an account? <a href="" style="color: #E4E3D3;"> LOGIN </a></div>
+                    </div>
+                </form>
             </div>
-
-           
         </div>
     </div>
     
