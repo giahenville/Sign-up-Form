@@ -20,53 +20,56 @@
         </div>
 
         <!-- Right-side -->
-        <div style="background-color: #6D9F71;" class="flex justify-center items-center w-screen h-screen md:w-3/5 md:ml-auto slideRight-animation">
+        <div style="background-color: #6D9F71;" class="flex items-center w-screen h-screen md:w-3/5 md:ml-auto slideRight-animation">
 
-                <form action="" method="" class="text-xl flex flex-col" style="color:#2E2D4D;">
-                    <div class="text-5xl" style="color: #2E2D4D">Get Started</div>
-                    <div class="flex mt-10">
-                        <div class="flex flex-col mr-20">
-                            <label for="first_name">First Name:</label>
-                            <input type="text" id="first_name" placeholder="John" name="first_name" 
-                            class="rounded-sm" style="background-color: #6D9F71; border: 1px solid rgb(245, 245, 245);" required>
-                        </div>
-                        <div class="flex flex-col">
-                            <label for="last_name">Last Name:</label>
-                            <input type="text" id="last_name" placeholder="Smith" name="first_name" 
-                            class="rounded-sm" style="background-color: #6D9F71; border: 1px solid rgb(245, 245, 245);" required>
-                        </div>
+            <form action="" method="" class="text-xl flex flex-col md:w-2/5 ml-20 py-30" style="color: #2E2D4D;">
+                <div class="text-5xl mb-10">Get Started</div>
+            
+                <div class="flex flex-col md:flex-row mb-10">
+                    <div class="flex flex-col mb-4 md:mr-8">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" placeholder="John" name="first_name" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
                     </div>
-                    <div class="flex mt-10">
-                        <div class="flex flex-col mr-20">
-                            <label for="email">Email Address:</label>
-                            <input type="text" id="email" placeholder="you@example.com" name="email" 
-                            class="rounded-sm" style="background-color: #6D9F71; border: 1px solid rgb(245, 245, 245);" required>
-                        </div>
-                        <div class="flex flex-col">
-                            <label for="phone_number">Phone Number:</label>
-                            <input type="number" id="phone_number" placeholder="xxx-xxx-xxxx" name="phone_number" 
-                            class="rounded-sm" style="background-color: #6D9F71; border: 1px solid rgb(245, 245, 245);" required>
-                        </div>
+            
+                    <div class="flex flex-col">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" placeholder="Smith" name="last_name" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
                     </div>
-                    <div class="flex mt-10">
-                        <div class="flex flex-col mr-20">
-                            <label for="password">Password:</label>
-                            <input type="text" id="password" name="password" 
-                            class="rounded-sm" style="background-color: #6D9F71; border: 1px solid rgb(245, 245, 245);" required>
-                        </div>
-                        <div class="flex flex-col">
-                            <label for="password_confirm">Confirm Password:</label>
-                            <input type="text" id="password_confirm" name="password_confirm" 
-                            class="rounded-sm" style="background-color: #6D9F71; border: 1px solid rgb(245, 245, 245);" required>
-                        </div>
+                </div>
+            
+                <div class="flex flex-col md:flex-row mb-10">
+                    <div class="flex flex-col mb-4 md:mr-8">
+                        <label for="email">Email Address:</label>
+                        <input type="text" id="email" placeholder="you@example.com" name="email" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
                     </div>
-                    <div>
-                        <button type="submit" class="mt-10 rounded-md py-3 px-12" style="background-color: rgb(245, 245, 245);">Create Account</button>
-                        <div>Already have an account? <a href="" style="color: rgb(245, 245, 245);"> LOGIN </a></div>
+            
+                    <div class="flex flex-col">
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number" placeholder="xxx-xxx-xxxx" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 
+                        valid:border-green-500 invalid:border-red-500" required>
                     </div>
-                </form>
-            </div>
+                </div>
+            
+                <div class="flex flex-col md:flex-row mb-10">
+                    <div class="flex flex-col mb-4 md:mr-8">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
+                    </div>
+            
+                    <div class="flex flex-col">
+                        <label for="password_confirm">Confirm Password:</label>
+                        <input type="password" id="password_confirm" name="password_confirm" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
+                    </div>
+                </div>
+            
+                <div class="flex flex-col">
+                    <button type="submit" class="mt-10 rounded-md py-3 px-1 bg-[#F5F5F5] text-[#2E2D4D] text-2xl">Create Account</button>
+                    <div class="mt-4 text-lg">Already have an account? <a href="" class="text-[#337357]">LOGIN</a></div>
+                </div>
+            </form>
         </div>
+    
     </div>
     
     <script src="script.js"></script>
