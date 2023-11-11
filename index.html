@@ -28,12 +28,14 @@
                 <div class="flex flex-col md:flex-row mb-10">
                     <div class="flex flex-col mb-4 md:mr-8">
                     <label for="first_name">First Name:</label>
-                    <input type="text" id="first_name" placeholder="John" name="first_name" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
+                    <input type="text" id="first_name" placeholder="John" name="first_name" 
+                    class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 focus:outline-none focus:bg-[#6D9F71]" required>
                     </div>
             
                     <div class="flex flex-col">
                     <label for="last_name">Last Name:</label>
-                    <input type="text" id="last_name" placeholder="Smith" name="last_name" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
+                    <input type="text" id="last_name" placeholder="Smith" name="last_name" 
+                    class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 focus:outline-none" required>
                     </div>
                 </div>
             
@@ -41,14 +43,14 @@
                     <div class="flex flex-col mb-4 md:mr-8">
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" placeholder="you@example.com" name="email" 
-                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 valid:border-green-500 invalid:border-red-500" required>
+                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 valid:border-green-500 invalid:border-red-500 focus:outline-none" required>
                     </div>
             
                     <div class="flex flex-col">
                         <label for="phone_number">Phone Number:</label>
                         <input type="tel" id="phone_number" placeholder="xxx-xxx-xxxx" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
                         class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 
-                        valid:border-green-500 invalid:border-red-500" required>
+                        valid:border-green-500 invalid:border-red-500 focus:outline-none" required>
                     </div>
                 </div>
             
@@ -57,14 +59,14 @@
                         <label for="password">Password:</label>
                         <input title="Must be at least 8 characters."type="password" pattern="[a-zA-Z0-9]{8,}" 
                         id="password" name="password" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] 
-                        px-4 py-2 valid:border-green-500 invalid:border-red-500" required>
+                        px-4 py-2 valid:border-green-500 invalid:border-red-500 focus:outline-none" required>
                         <p>Must be at least 8 characters long.</p>
                     </div>
             
                     <div class="flex flex-col">
                         <label for="password_confirm">Confirm Password:</label>
-                        <input type="password" id="password_confirm" name="password_confirm" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2" required>
-                       
+                        <input type="password" id="password_confirm" name="password_confirm" 
+                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2  valid:border-green-500 invalid:border-red-500 focus:outline-none" onkeyup="passwordConfirm();" required>
                     </div>
                 </div>
             
