@@ -21,3 +21,15 @@
     100% { opacity: 1; transform: translateX(0);   }
 }
 
+/* remove white background when input is added */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #6D9F71 inset !important;
+}
+
+/*Change placeholder text in textbox*/
+input:-webkit-autofill{
+    -webkit-text-fill-color: #2E2D4D !important;
+}
