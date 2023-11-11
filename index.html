@@ -6,9 +6,9 @@
     <title>Sign Up</title>
     <link href="./dist/output.css" rel="stylesheet">
 </head>
-
-<body class="font-serif">
+<body class="font-serif" style="overflow: hidden">
     <div style="background-color: #E4E3D3" class="flex flex-col md:flex-row w-screen h-screen slideUp-animation">
+        
         <!-- Left-side -->
         <div class="w-screen h-screen md:w-2/5 md:translate-y-0" style="color: #2E2D4D">
             <div id="logo" class="flex items-center">
@@ -22,20 +22,22 @@
         <!-- Right-side -->
         <div style="background-color: #6D9F71;" class="flex items-center w-screen h-screen md:w-3/5 md:ml-auto slideRight-animation">
 
-            <form action="" method="" class="text-xl flex flex-col md:w-2/5 ml-20 py-30" style="color: #2E2D4D;">
+            <form action="" method="" class="flex flex-col md:w-2/5 ml-20 py-30 text-xl " style="color: #2E2D4D;">
                 <div class="text-5xl mb-10">Get Started</div>
             
                 <div class="flex flex-col md:flex-row mb-10">
                     <div class="flex flex-col mb-4 md:mr-8">
                     <label for="first_name">First Name:</label>
                     <input type="text" id="first_name" placeholder="John" name="first_name" 
-                    class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 focus:outline-none focus:bg-[#6D9F71]" required>
+                    class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] 
+                    px-4 py-2 focus:outline-none placeholder-gray-600" required>
                     </div>
             
                     <div class="flex flex-col">
                     <label for="last_name">Last Name:</label>
                     <input type="text" id="last_name" placeholder="Smith" name="last_name" 
-                    class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 focus:outline-none" required>
+                    class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] 
+                    px-4 py-2 focus:outline-none placeholder-gray-600" required>
                     </div>
                 </div>
             
@@ -43,36 +45,37 @@
                     <div class="flex flex-col mb-4 md:mr-8">
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" placeholder="you@example.com" name="email" 
-                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 valid:border-green-500 invalid:border-red-500 focus:outline-none" required>
+                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] 
+                        px-4 py-2 focus:outline-none placeholder-gray-600" onkeyup="borderColors()" required>
                     </div>
             
                     <div class="flex flex-col">
                         <label for="phone_number">Phone Number:</label>
-                        <input type="tel" id="phone_number" placeholder="xxx-xxx-xxxx" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                        <input title = "Add numbers in the format 'xxx-xxx-xxxx'." type="tel" id="phone_number" placeholder="xxx-xxx-xxxx" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
                         class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 
-                        valid:border-green-500 invalid:border-red-500 focus:outline-none" required>
+                        focus:outline-none placeholder-gray-600" onkeyup="borderColors()" required>
                     </div>
                 </div>
             
-                <div class="flex flex-col md:flex-row mb-10">
+                <div class="flex flex-col md:flex-row mb-10 ">
                     <div class="flex flex-col mb-4 md:mr-8">
                         <label for="password">Password:</label>
                         <input title="Must be at least 8 characters."type="password" pattern="[a-zA-Z0-9]{8,}" 
                         id="password" name="password" class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] 
-                        px-4 py-2 valid:border-green-500 invalid:border-red-500 focus:outline-none" required>
-                        <p>Must be at least 8 characters long.</p>
+                        px-4 py-2 focus:outline-none" onkeyup="borderColors(); passwordConfirm();" required>
+                        <p class="text-sm">Must be at least 8 characters long.</p>
                     </div>
             
                     <div class="flex flex-col">
                         <label for="password_confirm">Confirm Password:</label>
                         <input type="password" id="password_confirm" name="password_confirm" 
-                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2  valid:border-green-500 invalid:border-red-500 focus:outline-none" onkeyup="passwordConfirm();" required>
+                        class="rounded-sm bg-[#6D9F71] border border-[#F5F5F5] px-4 py-2 focus:outline-none" onkeyup="passwordConfirm();" required>
                     </div>
                 </div>
             
-                <div class="flex flex-col">
-                    <button type="submit" class="mt-10 rounded-md py-3 px-1 bg-[#F5F5F5] text-[#2E2D4D] text-2xl">Create Account</button>
-                    <div class="mt-4 text-lg">Already have an account? <a href="" class="text-[#337357]">LOGIN</a></div>
+                <div class="">
+                    <button type="submit" class="mt-10 rounded-md py-3 px-10 bg-[#F5F5F5] text-[#2E2D4D] text-2xl">Create Account</button>
+                    <div class="mt-4 text-sm">Already have an account? <a href="" class="text-[#337357]">LOGIN</a></div>
                 </div>
             </form>
         </div>
