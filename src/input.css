@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Animation */
+.slideUp-animation {
+    animation: 1.3s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;animation-delay: 0s;
+} 
+
+.slideRight-animation {
+    animation: 1.3s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;animation-delay: 0s;
+}                             
+
+@keyframes slideUp {  
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: inherit;  }    
+}                    
+
+@keyframes slideRight {              
+    0% { opacity: 0; transform: translateX(30px); }                
+    100% { opacity: 1; transform: translateX(0);   }
+}
+
+/* remove white background when input is added */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #6D9F71 inset !important;
+}
+
+/*Change placeholder text in textbox*/
+input:-webkit-autofill{
+    -webkit-text-fill-color: #2E2D4D !important;
+}
