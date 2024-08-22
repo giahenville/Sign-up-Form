@@ -1,11 +1,10 @@
 # Sign-up-Form
+<<<<<<< HEAD
 
-This is my Sign-Up Form for The Calculator project in The Odin Project. Try it [here](https://giahenville.github.io/Sign-up-Form/)!
+This is a user-friendly sign-up form. The form collects essential information such as name, email address, phone number, and password, with form validation. Try it [here](https://giahenville.github.io/Sign-up-Form/)!
 
 <<<<<<< HEAD
+=======
+>>>>>>> e4480d6792be058d69ed7ce2f3453648c7c38fe1
 ## Preview
 ![](./sign-up-photo.png)
-=======
-svg link https://storyset.com/illustration/login/pana
- 
->>>>>>> 58b25ae42f6f3b6a2431043a3a4a139ca26e3ef0
